@@ -30,6 +30,8 @@
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the card's
                   content.
+
+                  <a href="<?php echo site_url('Auth/logout');?>" class="w3-bar-item w3-button w3-red w3-right">Keluar</a>
                 </p>
 
                 <a href="#" class="card-link">Card link</a>

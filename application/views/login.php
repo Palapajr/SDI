@@ -25,10 +25,10 @@
   <div class="card">
     <div class="card-body login-card-body">
     <h4 class="login-box-msg"><b> SDI </b><br>Information Management System</h4>
-
-      <form action="" method="post">
+    <?php echo $this->session->flashdata('msg');?>
+      <form action="<?php echo site_url('auth/autentikasi');?>" method="POST">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username">
+          <input type="text" class="form-control" name="username" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -46,7 +46,7 @@
         <div class="row">
           <!-- /.col -->
           <div class="col">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
